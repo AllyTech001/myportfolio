@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 const uglify = require('gulp-uglify');
-const sass = require('gulp-sass');
+const dartSass = require('sass'); // Dart Sass engine
+const sass = require('gulp-sass')(dartSass); // Pass Dart Sass to gulp-sass
 const wait = require('gulp-wait');
 const babel = require('gulp-babel');;
 const rename = require('gulp-rename');
